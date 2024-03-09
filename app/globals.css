@@ -3,31 +3,69 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+	background: #000;
+	color: #fff;
+	max-width: 1500px;
+	margin: auto;
+	cursor: none;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	scroll-behavior: smooth;
+	scroll-snap-type: y mandatory;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	overscroll-behavior-y: contain;
+	transition: transform 100s ease-in-out;
+}
+.flare {
+	position: fixed;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	mix-blend-mode: screen;
+	pointer-events: none;
+	transform: translate(-50%, -50%);
+	z-index: 999999 !important ;
+	backdrop-filter: blur(1px);
+	background-color: #0000005e;
+	transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@media screen and (max-width: 768px) {
+	.flare {
+		width: 10px;
+		height: 0;
+		transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
+			opacity 0.2s ease-in-out;
+	}
+}
+.flare.pointer {
+	opacity: 0 !important;
+	transition: width 0.2s ease-in-out, height 0.2s ease-in-out,
+		opacity 0.2s ease-in-out;
+}
+
+.container {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+		max-width: 100%;
+	}
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+	.container {
+		max-width: 80%;
+	}
+}
+
+@media screen and (min-width: 901px) {
+	.container {
+		max-width: 1200px;
+	}
 }
