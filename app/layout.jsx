@@ -1,5 +1,6 @@
 import FlareCursor from '@/components/ui/FlareCursor'
 import { ClerkProvider } from '@clerk/nextjs'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Poppins } from 'next/font/google'
 import NextTopLoader from 'nextjs-toploader'
 import Navbar from './components/Navbar'
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
 		<ClerkProvider>
 			<html lang='en' className='container'>
 				<body className={poppins.className}>
+					<SpeedInsights />
 					<NextTopLoader />
 					<FlareCursor />
 					<Navbar />
