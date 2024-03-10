@@ -1,7 +1,7 @@
 import Button from '@/components/ui/Button'
 import ButtonOutline from '@/components/ui/ButtonOutline'
 import Image from 'next/image'
-import dot from '../assets/dot.png'
+import dot from '../assets/Dot.png'
 import text from '../assets/text.svg'
 import Animation from './AnimationWrapper'
 

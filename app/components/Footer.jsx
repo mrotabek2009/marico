@@ -2,7 +2,7 @@ import Button from '@/components/ui/Button'
 import { SignInButton } from '@clerk/nextjs'
 import Image from 'next/image'
 import Link from 'next/link'
-import dot from '../assets/dot.png'
+import dot from '../assets/Dot.png'
 import logo from '../assets/favicon.png'
 import logo2 from '../assets/logo.png'
 
