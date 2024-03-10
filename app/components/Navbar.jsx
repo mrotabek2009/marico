@@ -6,8 +6,10 @@ import {
 	DropdownMenuItem,
 	DropdownMenuSeparator,
 	DropdownMenuTrigger,
-} from '@/components/ui/DropdownMenu'
+} from '@/components/ui/dropdown-menu'
+
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+
 import {
 	SignInButton,
 	SignUpButton,
@@ -15,13 +17,14 @@ import {
 	SignedOut,
 	UserButton,
 } from '@clerk/nextjs'
+
 import { ChevronDown } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 import logo from '../assets/logo.png'
 
-const Navbar = () => {
+function Navbar() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
 	const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen)

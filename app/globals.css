@@ -8,16 +8,9 @@
 	max-width: 1500px;
 	margin: auto;
 	cursor: none;
+	overflow-x: hidden;
 }
 
-body {
-	scroll-behavior: smooth;
-	scroll-snap-type: y mandatory;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	overscroll-behavior-y: contain;
-	transition: transform 100s ease-in-out;
-}
 .flare {
 	position: fixed;
 	border: 2px solid #fff;
