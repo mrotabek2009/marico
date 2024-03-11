@@ -1,4 +1,4 @@
-import FlareCursor from '@/components/ui/FlareCursor'
+import FlareCursor from '@/components/FlareCursor'
 import { ClerkProvider } from '@clerk/nextjs'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Poppins } from 'next/font/google'
@@ -20,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<ClerkProvider>
-			<html lang='en' className='containers !overflow-x-hidden'>
+			<html lang='en' className='containers !scroll-smooth'>
 				<body className={poppins.className}>
 					<SpeedInsights />
 					<NextTopLoader />
