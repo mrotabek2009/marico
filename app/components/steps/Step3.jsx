@@ -42,8 +42,15 @@ const Step3 = () => {
 						<ButtonOutline text={'View A Demo'} />
 					</div>
 				</div>
-				<div data-aos='fade-right'>
-					<Image className='ml-24' src={monitor} alt='monitor' />
+				<div
+					data-aos='fade-right'
+					className='mx-auto lg:mx-0 flex items-center justify-center md:block'
+				>
+					<Image
+						className='ml-24 overflow-y-hidden'
+						src={monitor}
+						alt='monitor'
+					/>
 				</div>
 			</div>
 		</div>

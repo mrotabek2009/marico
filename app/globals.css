@@ -2,13 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+:root,
+html {
 	background: #000;
 	color: #fff;
 	max-width: 1500px;
 	margin: auto;
 	cursor: none;
-	overflow-x: hidden;
+	overflow-x: hidden !important;
 }
 
 .flare {
@@ -38,27 +39,28 @@
 		opacity 0.2s ease-in-out;
 }
 
-.container {
-	width: 100%;
+.containers {
+	overflow-x: hidden !important;
+	width: 90%;
 	max-width: 800px;
 	margin: 0 auto;
 	padding: 20px;
 }
 
 @media screen and (max-width: 600px) {
-	.container {
+	.containers {
 		max-width: 100%;
 	}
 }
 
 @media screen and (min-width: 601px) and (max-width: 900px) {
-	.container {
+	.containers {
 		max-width: 80%;
 	}
 }
 
 @media screen and (min-width: 901px) {
-	.container {
+	.containers {
 		max-width: 1200px;
 	}
 }

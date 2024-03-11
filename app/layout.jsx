@@ -20,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<ClerkProvider>
-			<html lang='en' className='container'>
+			<html lang='en' className='containers !overflow-x-hidden'>
 				<body className={poppins.className}>
 					<SpeedInsights />
 					<NextTopLoader />

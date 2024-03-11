@@ -13,7 +13,7 @@ const Step1 = () => {
 				<h1 className='text-3xl md:text-7xl font-bold text-center mx-10'>
 					Connect Your Content
 				</h1>
-				<h2 className='text-gray-400 text-center w-[400px] md:w-[800px]'>
+				<h2 className='text-gray-400 text-center w-[300px] md:w-[800px]'>
 					Bring all of your content together and get a Homepage that
 					automatically updates whenever you create anywhere online.
 				</h2>
@@ -42,8 +42,15 @@ const Step1 = () => {
 						<ButtonOutline text={'View A Demo'} />
 					</div>
 				</div>
-				<div data-aos='fade-right'>
-					<Image className='ml-24' src={monitor} alt='monitor' />
+				<div
+					data-aos='fade-right'
+					className='mx-auto lg:mx-0 flex items-center justify-center md:block'
+				>
+					<Image
+						className='ml-24 overflow-x-hidden w-full'
+						src={monitor}
+						alt='monitor'
+					/>
 				</div>
 			</div>
 		</div>
