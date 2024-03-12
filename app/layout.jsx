@@ -3,7 +3,6 @@ import { ClerkProvider } from '@clerk/nextjs'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Poppins } from 'next/font/google'
 import NextTopLoader from 'nextjs-toploader'
-import favicon from './assets/favicon.png'
 import Navbar from './components/Navbar'
 import './globals.css'
 
@@ -15,7 +14,17 @@ const poppins = Poppins({
 export const metadata = {
 	title: 'Marico — control your audience.',
 	description: 'Claim control of your audience.',
-	icons: { icon: `${favicon}` },
+	openGraph: {
+		title: 'Marico — control your audience.',
+		description: 'Claim control of your audience',
+		type: 'website',
+		url: 'https://marico-by-otabek.vercel.app/',
+		locale: 'en_EN',
+		images: '/favicon.png',
+		countryName: 'America',
+		siteName: 'Marico',
+		emails: 'abdiraimov032@gmail.com',
+	},
 }
 
 export default function RootLayout({ children }) {
