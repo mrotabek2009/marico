@@ -10,10 +10,10 @@ const Step3 = () => {
 			<Animation />
 			<div className='flex flex-col gap-4 items-center' data-aos='zoom-out-up'>
 				<p className='text-center text-2xl text-blue-500'>STEP 3</p>
-				<h1 className='text-3xl md:text-7xl font-bold text-center mx-10'>
+				<h1 className='text-3xl lg:text-7xl font-bold text-center mx-10'>
 					Send Emails & Text Messages
 				</h1>
-				<h2 className='text-gray-400 text-center w-[300px] md:w-[800px]'>
+				<h2 className='text-gray-400 text-center w-[300px] lg:w-[800px]'>
 					No more going through a social platform. Reach and engage your
 					audience directly over email and text massage.
 				</h2>

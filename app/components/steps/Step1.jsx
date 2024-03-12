@@ -10,10 +10,10 @@ const Step1 = () => {
 			<Animation />
 			<div className='flex flex-col gap-4 items-center' data-aos='zoom-out-up'>
 				<p className='text-center text-2xl text-blue-500'>STEP 1</p>
-				<h1 className='text-3xl md:text-7xl font-bold text-center mx-10'>
+				<h1 className='text-3xl lg:text-7xl font-bold text-center mx-10'>
 					Connect Your Content
 				</h1>
-				<h2 className='text-gray-400 text-center w-[300px] md:w-[800px]'>
+				<h2 className='text-gray-400 text-center w-[300px] lg:w-[800px]'>
 					Bring all of your content together and get a Homepage that
 					automatically updates whenever you create anywhere online.
 				</h2>
@@ -22,7 +22,7 @@ const Step1 = () => {
 			<div className='my-20 grid grid-cols-1 lg:grid-cols-2 gap-4 ml-10'>
 				<div data-aos='fade-left'>
 					<h3 className='text-2xl mb-10'>Your Homepage</h3>
-					<h1 className='text-3xl md:text-7xl -ml-7 font-bold text-center w-[100%] mb-5 md:mb-10'>
+					<h1 className='text-3xl lg:text-7xl -ml-0 lg:-ml-7 font-bold text-start lg:text-center w-[100%] mb-5 md:mb-10'>
 						Your Content. All in <span className='text-blue-500'>One Spot</span>
 					</h1>
 					<p className='flex items-center gap-2 mb-7'>

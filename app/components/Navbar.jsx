@@ -30,11 +30,11 @@ function Navbar() {
 	const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen)
 
 	return (
-		<div className='text-gray-400 md:px-[120px] pt-4 flex items-center justify-between'>
+		<div className='text-gray-400 w-full pt-4 flex items-center justify-between'>
 			<Link href='/'>
 				<Image src={logo} alt='LOGO' />
 			</Link>
-			<div className='items-center gap-[28px] hidden md:flex'>
+			<div className='items-center gap-[28px] hidden lg:flex'>
 				<DropdownMenu>
 					<DropdownMenuTrigger className='flex min-w-fit items-center hover:text-blue-500 transition-all'>
 						Use Cases{' '}
@@ -67,7 +67,7 @@ function Navbar() {
 				</Link>
 			</div>
 
-			<div className='flex md:hidden'>
+			<div className='flex lg:hidden'>
 				<Sheet>
 					<SheetTrigger>☰</SheetTrigger>
 					<SheetContent className='backdrop-blur-sm'>
@@ -102,19 +102,18 @@ function Navbar() {
 							<Link className='hover:text-blue-600 transition-all' href='/'>
 								Blog
 							</Link>
+							<div className='gap-3 hidden md:flex'>
+								<SignedOut>
+									<SignInButton />
+									<SignUpButton className='p-2.5 text-white rounded-xl bg-[#306EF7] hover:border hover:border-[#306EF7] hover:text-white hover:scale-75 hover:bg-transparent transition-all' />
+								</SignedOut>
+								<SignedIn>
+									<UserButton />
+								</SignedIn>
+							</div>
 						</div>
 					</SheetContent>
 				</Sheet>
-			</div>
-
-			<div className='gap-3 hidden md:flex'>
-				<SignedOut>
-					<SignInButton />
-					<SignUpButton className='p-2.5 text-white rounded-xl bg-[#306EF7] hover:border hover:border-[#306EF7] hover:text-white hover:scale-75 hover:bg-transparent transition-all' />
-				</SignedOut>
-				<SignedIn>
-					<UserButton />
-				</SignedIn>
 			</div>
 		</div>
 	)

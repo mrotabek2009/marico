@@ -8,10 +8,10 @@ const Step2 = () => {
 		<div>
 			<div className='flex flex-col gap-4'>
 				<p className='text-center text-2xl text-blue-500'>STEP 2</p>
-				<h1 className='text-3xl md:text-7xl font-bold text-center mx-10'>
+				<h1 className='text-3xl lg:text-7xl font-bold text-center mx-10'>
 					Connect Your Content
 				</h1>
-				<h2 className='mx-auto text-gray-400 text-center w-[300px] md:w-[800px]'>
+				<h2 className='mx-auto text-gray-400 text-center w-[300px] lg:w-[800px]'>
 					Bring all of your content together and get a Homepage that
 					automatically updates whenever you create anywhere online.
 				</h2>
