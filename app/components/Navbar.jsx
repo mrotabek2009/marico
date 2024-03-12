@@ -115,6 +115,15 @@ function Navbar() {
 					</SheetContent>
 				</Sheet>
 			</div>
+			<div className='gap-3 hidden md:flex'>
+				<SignedOut>
+					<SignInButton />
+					<SignUpButton className='p-2.5 text-white rounded-xl bg-[#306EF7] hover:border hover:border-[#306EF7] hover:text-white hover:scale-75 hover:bg-transparent transition-all' />
+				</SignedOut>
+				<SignedIn>
+					<UserButton />
+				</SignedIn>
+			</div>
 		</div>
 	)
 }
