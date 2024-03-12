@@ -22,11 +22,13 @@ export default function RootLayout({ children }) {
 		<ClerkProvider>
 			<html lang='en' className='containers !scroll-smooth'>
 				<body className={poppins.className}>
-					<SpeedInsights />
-					<NextTopLoader />
-					<FlareCursor />
-					<Navbar />
-					{children}
+					<div className='!overflow-hidden'>
+						<SpeedInsights />
+						<NextTopLoader />
+						<FlareCursor />
+						<Navbar />
+						{children}
+					</div>
 				</body>
 			</html>
 		</ClerkProvider>

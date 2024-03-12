@@ -32,7 +32,7 @@ const Hero = () => {
 			</div>
 			<div className='flex items-center gap-2' data-aos='zoom-in'>
 				<Image src={dot} alt='dot' />
-				<p className='text-gray-400 text-[20px]'>
+				<p className='text-gray-400 text-[15px] lg":text-[20px]'>
 					<span className='text-white font-bold'>1000+</span> creators have
 					already started
 				</p>
