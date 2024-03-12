@@ -2,7 +2,6 @@ import Button from '@/components/ui/Button'
 import { SignInButton } from '@clerk/nextjs'
 import Image from 'next/image'
 import Link from 'next/link'
-import dot from '../assets/Dot.png'
 import logo from '../assets/favicon.png'
 import logo2 from '../assets/logo.png'
 
@@ -19,7 +18,10 @@ const Footer = () => {
 				<h2>Setup is easy and takes under 5 minutes.</h2>
 				<Button text={'Get Started Now'} />
 				<div className='flex items-center gap-2' data-aos='zoom-in'>
-					<Image src={dot} alt='dot' />
+					<div class='relative h-[20px] w-[20px]'>
+						<span class='animate-ping left-0 absolute w-full h-full inline-flex rounded-full bg-green-400 opacity-75'></span>
+						<div class='block h-[20px] w-[20px] rounded-full bg-green-400'></div>
+					</div>
 					<p className='text-gray-400 text-[15px] lg:text-[20px]'>
 						<span className='text-white font-bold'>1000+</span> creators have
 						already started
